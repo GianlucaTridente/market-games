@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import "../App.css";
-import ItemList from "./ItemList";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import ItemDetail from "./ItemDetail";
+
 
 const products = [
   {
@@ -90,10 +90,10 @@ const products = [
   },
 ];
 
-const ItemListContainer = () => {
-  const [data, setData] = useState([]);
+const ItemDetailContainer = () => {
+  const [data, setData] = useState({});
 
-  const { categoryId } = useParams();
+  const { detailId } = useParams();
 
   useEffect(() => {
     const getData = new Promise((resolve) => {
@@ -101,20 +101,16 @@ const ItemListContainer = () => {
         resolve(products);
       }, 2000);
     });
-    if (categoryId) {
-      getData.then((res) =>
-        setData(res.filter((product) => product.category == categoryId))
-      );
-    } else {
-      getData.then((res) => setData(res));
-    }
-  }, [categoryId]);
+    getData.then((res) =>
+      setData(res.find((product) => product.id == parseInt(detailId)))
+    );
+  }, []);
 
   return (
     <div>
-      <ItemList data={data} />
+      <ItemDetail data={data} />
     </div>
   );
 };
 
-export default ItemListContainer;
+export default ItemDetailContainer;
