@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="navbar-m">
       <AppBar position="fixed" sx={{ backgroundColor: "#1f2023" }}>
         <Toolbar>
           <NavLink to="/">
@@ -63,21 +63,20 @@ const Navbar = () => {
               MenuListProps={{
                 "aria-labelledby": "basic-button",
               }}
-              
             >
               <NavLink className="nav-link" to="/category/action">
-                <MenuItem sx={{color : "white", backgroundColor : "#161515"}} onClick={handleClose}>Action</MenuItem>
+                <MenuItem onClick={handleClose}>Action</MenuItem>
               </NavLink>
               <NavLink className="nav-link" to="/category/arcade">
-                <MenuItem sx={{color : "white", backgroundColor : "#161515"}}  onClick={handleClose}>Arcade</MenuItem>
+                <MenuItem onClick={handleClose}>Arcade</MenuItem>
               </NavLink>
               <NavLink className="nav-link" to="/category/terror">
-                <MenuItem sx={{color : "white", backgroundColor : "#161515"}}  onClick={handleClose}>Terror</MenuItem>
+                <MenuItem onClick={handleClose}>Terror</MenuItem>
               </NavLink>
             </Menu>
 
-            <NavLink className="nav-link">
-              <Tab value="three" label="ABOUT US" />
+            <NavLink className="nav-link" to="/checkout">
+              <Tab value="three" label="CHECK OUT" />
             </NavLink>
           </Tabs>
           <Button

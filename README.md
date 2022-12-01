@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# MARKET GAMES
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[MARKET GAMES](https://react-44970.web.app/)
 
-## Available Scripts
+https://react-44970.web.app/
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This proyect is about a fictional e-commerce directed to people who like video games where you can buy a game, this website can be about anything but I decided to choose video games to topic because I have liked playing video games for a long time.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to use this repository to see the website in your browser
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- You must have node.js to run it.
+- Use the terminal to write the next item.
+- ### `npm start`
+- Check if you are in the same fordel.
+- Or you just can use the firebase link https://react-44970.web.app/
 
-### `npm test`
+## Libraries that I use to do this page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ## Material UI -v5.10.10
 
-### `npm run build`
+  I decided to use MUI because I did a proyect with Boostrap but in this case I wanted to try something a little different and I liked the result.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ## Firebase -v9.14.0
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  I use it to obtain data (the products) from a database and save the data that the buyer sends me (order id). It is a good way to have a little more contact with "backend".
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ## SweetAlert2 -v11.6.14
 
-### `npm run eject`
+  Just to don´t use the default alert.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- ## React Router -v6.4.3
+  The best way to have a clean and organized navigation path.

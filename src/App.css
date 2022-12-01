@@ -5,6 +5,11 @@
 }
 
 /* NAVBAR */
+
+.navbar-m {
+  padding-bottom: 70px;
+}
+
 .logo-img {
   width: 83px;
   margin-left: 30px;
@@ -18,6 +23,7 @@
 /* FOOTER */
 
 footer {
+  margin-top: 111px;
   color: white;
   position: relative;
   height: auto;
@@ -173,20 +179,498 @@ footer .container-footer .sec h2:before {
   margin: 30px;
 }
 
-
-
 /* NAVLIST */
 
-.nav-link{
+.nav-link {
   text-decoration: none;
   color: inherit;
 }
 
-
 /* ITEMDETAIL */
 
-.card-detail{
+.card-detail {
   display: flex;
   justify-content: center;
   padding: 100px;
+}
+
+/* CART */
+
+.cart-buy {
+  text-decoration: none;
+  color: #911096;
+}
+
+.cart-cart {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cart-div {
+  padding-top: 60px;
+}
+
+.cart-div p {
+  /*   padding: 228px;
+  text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 235px;
+}
+
+.cart-div img {
+  width: 300px;
+}
+
+.cart-div h2 {
+  color: white;
+}
+
+.cart-div :link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: large;
+}
+
+/* cart items */
+
+.total {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.cart-items {
+  border: solid #7a057e;
+  border-radius: 40px;
+  width: fit-content;
+  padding: 10px;
+  display: inline-block;
+  margin: 50px;
+}
+
+.cart-items img {
+  border-radius: 30px;
+  width: 300px;
+}
+
+.cart-items h4 {
+  color: #7a057e;
+  text-align: center;
+}
+
+.cart-items p {
+  color: white;
+}
+
+.cart-text button {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border: 0px solid transparent;
+  background-color: rgba(100, 77, 237, 0.08);
+  border-radius: 1.25em;
+  transition: all 0.2s linear;
+}
+
+.cart-text button:hover {
+  box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
+    8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+    17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+    36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+    99px 72px 143px rgba(0, 0, 0, 0.08);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 4em;
+  background-color: rgba(0, 0, 0, 0.253);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* BUTTON CHECKOUT */
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonn-continue {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.buttonn-continue {
+  width: 12rem;
+  height: auto;
+}
+
+.buttonn-continue .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+.buttonn-continue .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.buttonn-continue .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.buttonn-continue .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #7a057e;
+  border-right: 0.125rem solid #7a057e;
+  transform: rotate(45deg);
+}
+
+.buttonn-continue .button-text-continue {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttonn-continue:hover .circle {
+  width: 100%;
+}
+
+.buttonn-continue:hover .circle .icon.arrow {
+  background: #7a057e;
+  transform: translate(1rem, 0);
+}
+
+.buttonn-continue:hover .button-text-continue {
+  color: #7a057e;
+}
+
+/* loader */
+
+.loarder-loader {
+  margin-left: 50%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+/* inputs form */
+
+.group {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 45%;
+}
+
+.input {
+  color: white;
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+.input:focus {
+  outline: none;
+}
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #7a057e;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 216px;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #7a057e;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #7a057e;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.button-checkout {
+  margin-top: 60px;
+  margin-left: 45%;
+}
+
+.button-checkout-button {
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  position: relative;
+  font-size: 17px;
+  background: #333;
+  border: none;
+  color: #fff;
+}
+
+.button-checkout-button:hover {
+  letter-spacing: 0.25em;
+  background: #ff1867;
+  color: #ff1867;
+  box-shadow: 0 0 45px #ff1867;
+}
+
+.button-checkout-button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #222222;
+}
+
+.button-checkout-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.button-checkout-button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.button-checkout-button i::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #ff1867;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.button-checkout-button:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.button-checkout-button i::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #ff1867;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.button-checkout-button:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+/* BUTTON CLEAR CART */
+
+.noselect {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: #9c27b0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #9c27b0;
+}
+
+.noselect,
+.noselect span {
+  transition: 200ms;
+}
+
+.noselect .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+
+.noselect .icon {
+  position: absolute;
+  border-left: 1px solid #9c27b0;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noselect svg {
+  width: 15px;
+  fill: #eee;
+}
+
+.noselect:hover {
+  background: #9c27b0;
+}
+
+.noselect:hover .text {
+  color: transparent;
+}
+
+.noselect:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.noselect:focus {
+  outline: none;
+}
+
+.noselect:active .icon svg {
+  transform: scale(0.8);
+}
+
+.remove-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
